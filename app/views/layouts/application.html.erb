@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Drift - A fully responsive, HTML5 based admin template">
+    <meta name="keywords" content="Responsive, HTML5, admin theme, business, professional, jQuery, web design, CSS3, sass">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <!-- /meta tags -->
+    <title>Drift - Admin Template</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <%= stylesheet_link_tag "flag-icon-css/css/flag-icon.min", media: 'all' %>
+    <%= stylesheet_link_tag "gaxon-icon/styles", media: 'all' %>
+    <%= stylesheet_link_tag "perfect-scrollbar/css/perfect-scrollbar", media: 'all' %>
+    <%= stylesheet_link_tag 'bootstrap', media: 'all', class: 'theme-settings-bootstrap-css' %>
+    <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body class="dt-sidebar--fixed dt-header--fixed">
+    <div class="dt-root">
+      <%= render 'layouts/partials/header', collection: @partials %>
+      <main class="dt-main">
+        <%= render 'layouts/partials/sidebar', collection: @partials %>
+        <!-- Site Content Wrapper -->
+        <div class="dt-content-wrapper">
+          <%= content_for?(:content) ? yield(:content) : yield %>
+          <%= render 'layouts/partials/footer', collection: @partials %>
+        </div>
+        <%= render 'layouts/partials/customizer', collection: @partials %>
+      </main>
+    </div>
+    <!-- Scripts -->
+    <%= javascript_include_tag 'perfect-scrollbar/dist/perfect-scrollbar.js' %>
+  </body>
+</html>

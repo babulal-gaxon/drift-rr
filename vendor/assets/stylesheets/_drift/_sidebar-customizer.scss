@@ -1,0 +1,91 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the Customizer of the site/application.
+// -----------------------------------------------------------------------------
+.#{$class-prefix}-customizer {
+  position: relative;
+  z-index: 1501;
+  width: $sidebar-width * 1.2;
+  background-color: $white;
+
+  &-toggle {
+    position: fixed;
+    top: 130px;
+    right: 0;
+    z-index: 100;
+
+    & a {
+      @include transition(all 0.5s ease);
+      @include border-left-radius(50px);
+      @include box-shadow($box-shadow);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 4rem;
+      width: 6rem;
+      font-size: 2.5rem;
+      @include gradient-directional(#512DA8, #FF4081, 135deg);
+      color: $white;
+
+      @include hover-focus {
+        @include gradient-directional(#512DA8, #FF4081, 90deg);
+      }
+    }
+  }
+
+  &__inner {
+    height: 100%;
+  }
+
+  &__header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+    min-height: $header-height;
+    @include box-shadow(0 2px 2px 0 rgba($text-color, 0.05));
+
+    & .close {
+      margin-left: auto;
+      font-size: 3.5rem;
+      font-weight: normal;
+      line-height: 0.8;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__body {
+    padding: 2rem;
+    height: calc(100% - #{$header-height});
+    overflow-y: auto;
+
+    & section {
+      padding-bottom: 2rem;
+
+      &:not(:last-child) {
+        border-bottom: $dt-border;
+        margin-bottom: 4.2rem;
+      }
+    }
+
+    & .#{$class-prefix}-list {
+      flex-flow: column nowrap;
+
+      & h5 {
+        margin-bottom: 0;
+      }
+
+      &__item {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      &__item:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}
