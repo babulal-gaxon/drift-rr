@@ -1,0 +1,204 @@
+ <div class="dt-root">
+  <%= render 'layouts/partials/header', collection: @partials %> 
+  <main class="dt-main">
+    <%= render 'layouts/partials/sidebar', collection: @partials %>
+    <!-- Site Content Wrapper -->
+    <div class="dt-content-wrapper">
+     <!-- Site Content -->
+      <div class="dt-content">
+
+        <!-- Page Header -->
+        <div class="dt-page__header">
+          <h1 class="dt-page__title">Sweet Alert</h1>
+        </div>
+        <!-- /page header -->
+
+        <!-- Grid -->
+        <div class="row">
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">A basic message</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary basic-alert">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Title with text</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary title-alert ">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Success Message</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary success-alert ">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Error Message</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary error-alert ">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Image With Message</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary img-content-alert ">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Custom HTML Message</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary html-content-alert ">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Custom Position</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary top-position-alert">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Parameter Alert</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary parameter-alert">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+          <!-- Grid Item -->
+          <div class="col-xl-4 col-6">
+
+            <!-- Card -->
+            <div class="dt-card dt-card__full-height">
+
+              <!-- Card Body -->
+              <div class="dt-card__body text-center">
+                <p class="lead">Auto Close Alert</p>
+                <a href="javascript:void(0)" class="btn btn-outline-primary auto-close-alert">Click me</a>
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+        </div>
+        <!-- /grid -->
+
+      </div>
+      <!-- /site content -->
+      <%= render 'layouts/partials/footer', collection: @partials %>
+    </div>
+    <%= render 'layouts/partials/customizer', collection: @partials %>
+  </main>
+</div>
+<%= render 'layouts/partials/end', collection: @partials %>
+<!-- Dependencies -->
+<%= javascript_include_tag 'sweetalert2/dist/sweetalert2.js' %>
+<%= javascript_include_tag 'sweet-alert.js' %>
+<%= javascript_include_tag 'script.js' %>

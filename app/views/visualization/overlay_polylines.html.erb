@@ -1,0 +1,70 @@
+ <div class="dt-root">
+  <%= render 'layouts/partials/header', collection: @partials %> 
+  <main class="dt-main">
+    <%= render 'layouts/partials/sidebar', collection: @partials %>
+    <!-- Site Content Wrapper -->
+    <div class="dt-content-wrapper">
+     <!-- Site Content -->
+      <div class="dt-content">
+
+        <!-- Page Header -->
+        <div class="dt-page__header">
+          <h1 class="dt-page__title">Google Maps</h1>
+        </div>
+        <!-- /page header -->
+
+        <!-- Grid -->
+        <div class="row">
+
+          <!-- Grid Item -->
+          <div class="col-12">
+
+            <!-- Card -->
+            <div class="dt-card">
+
+              <!-- Card Header -->
+              <div class="dt-card__header">
+
+                <!-- Card Heading -->
+                <div class="dt-card__heading">
+                  <h3 class="dt-card__title">Map Overlay Polylines</h3>
+                </div>
+                <!-- /card heading -->
+
+              </div>
+              <!-- /card header -->
+
+              <!-- Card Body -->
+              <div class="dt-card__body">
+
+                <!-- Map -->
+                <div class="embed-responsive embed-responsive-21by9">
+                  <div class="embed-responsive-item gmap-container" data-map-type="overlayPolylines"></div>
+                </div>
+                <!-- /map -->
+
+              </div>
+              <!-- /card body -->
+
+            </div>
+            <!-- /card -->
+
+          </div>
+          <!-- /grid item -->
+
+        </div>
+        <!-- /grid -->
+
+      </div>
+      <!-- /site content -->
+      <%= render 'layouts/partials/footer', collection: @partials %>
+    </div>
+    <%= render 'layouts/partials/customizer', collection: @partials %>
+  </main>
+</div>
+<%= render 'layouts/partials/end', collection: @partials %>
+<!-- Dependencies -->
+<%= javascript_include_tag 'http://maps.google.com/maps/api/js?key=AIzaSyBbyv4oQ2Y4cDpMC8MGhERZ_kicy4YKcuc' %>
+<%= javascript_include_tag 'gmaps/gmaps.min.js' %>
+<%= javascript_include_tag 'script.js' %>
+<%= javascript_include_tag 'maps/gmaps.js' %>

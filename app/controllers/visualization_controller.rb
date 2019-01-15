@@ -1,4 +1,4 @@
-class VizualizationController < ApplicationController
+class VisualizationController < ApplicationController
   def chartjs
     @title = 'Chart Js'
   end
@@ -35,12 +35,12 @@ class VizualizationController < ApplicationController
     @title = 'Overlay Polylines'
   end
 
-  def overlay_polylgons
+  def overlay_polygons
     @title = 'Overlay Polygons'
   end
 
-  def geo_json_polylines
-    @title = 'Geo JSON Polylines'
+  def geo_json_polygons
+    @title = 'Geo JSON Polygons'
   end
 
   def map_routes
