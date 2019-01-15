@@ -11,32 +11,26 @@
     <%= csp_meta_tag %>
     <!-- /meta tags -->
     <title>Drift - Admin Template</title>
-    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/assets/images/favicon.ico" type="image/x-icon">
 
     <%= stylesheet_link_tag "flag-icon-css/css/flag-icon.min", media: 'all' %>
     <%= stylesheet_link_tag "gaxon-icon/styles", media: 'all' %>
     <%= stylesheet_link_tag "perfect-scrollbar/css/perfect-scrollbar", media: 'all' %>
     <%= stylesheet_link_tag 'bootstrap', media: 'all', class: 'theme-settings-bootstrap-css' %>
+    <%= stylesheet_link_tag 'owl.carousel/dist/assets/owl.carousel', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'tempusdominus-bootstrap-4/build/css/tempusdominus-bootstrap-4.min', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag 'styles', media: 'all', 'data-turbolinks-track': 'reload' %>
+
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body class="dt-sidebar--fixed dt-header--fixed">
-    <div class="dt-root">
-      <%= render 'layouts/partials/header', collection: @partials %>
-      <main class="dt-main">
-        <%= render 'layouts/partials/sidebar', collection: @partials %>
-        <!-- Site Content Wrapper -->
-        <div class="dt-content-wrapper">
-          <%= content_for?(:content) ? yield(:content) : yield %>
-          <%= render 'layouts/partials/footer', collection: @partials %>
-        </div>
-        <%= render 'layouts/partials/customizer', collection: @partials %>
-      </main>
-    </div>
+    <%= render 'layouts/partials/loader', collection: @partials %>
+      <%= content_for?(:content) ? yield(:content) : yield %>
     <!-- Scripts -->
-    <%= javascript_include_tag 'perfect-scrollbar/dist/perfect-scrollbar.js' %>
+
+    <%#= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </body>
 </html>

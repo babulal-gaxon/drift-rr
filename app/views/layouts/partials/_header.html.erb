@@ -15,10 +15,10 @@
 
       <!-- Brand logo -->
       <span class="dt-brand__logo">
-        <a class="dt-brand__logo-link" href="index.php">
-          <img class="dt-brand__logo-img d-none d-sm-inline-block" src="assets/images/logo.png" alt="Drift">
-          <img class="dt-brand__logo-symbol d-sm-none" src="assets/images/logo-symbol.png" alt="Drift">
-        </a>
+        <%= link_to dashboards_dashboard_1_path, class: "dt-brand__logo-link" do %>
+          <img class="dt-brand__logo-img d-none d-sm-inline-block" src="/assets/images/logo.png" alt="Drift">
+          <img class="dt-brand__logo-symbol d-sm-none" src="/assets/images/logo-symbol.png" alt="Drift"> 
+        <% end %>
       </span>
       <!-- /brand logo -->
 
@@ -64,8 +64,7 @@
 
               <!-- Search Box -->
               <form class="search-box right-side-icon">
-                <input class="form-control form-control-lg" type="search" id="address" name="address"
-                       placeholder="Search in app...">
+                <input class="form-control form-control-lg" type="search" placeholder="Search in app...">
                 <button type="submit" class="search-icon"><i class="icon icon-search icon-lg"></i></button>
               </form>
               <!-- /search box -->
@@ -94,62 +93,62 @@
               <ul class="dt-app-list">
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-account.png" alt="Google Account">
+                    <img src="/assets/images/icon/icon-account.png" alt="Google Account">
                     <span class="dt-app-list__text">Account</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-google.png" alt="Google Search">
+                    <img src="/assets/images/icon/icon-google.png" alt="Google Search">
                     <span class="dt-app-list__text">Search</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-map.png" alt="Google Map">
+                    <img src="/assets/images/icon/icon-map.png" alt="Google Map">
                     <span class="dt-app-list__text">Maps</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-youtube.png" alt="Youtube">
+                    <img src="/assets/images/icon/icon-youtube.png" alt="Youtube">
                     <span class="dt-app-list__text">YouTube</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-playstore.png" alt="Play Store">
+                    <img src="/assets/images/icon/icon-playstore.png" alt="Play Store">
                     <span class="dt-app-list__text">Play</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-news.png" alt="Google News">
+                    <img src="/assets/images/icon/icon-news.png" alt="Google News">
                     <span class="dt-app-list__text">News</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-gmail.png" alt="Google Drive">
+                    <img src="/assets/images/icon/icon-gmail.png" alt="Google Drive">
                     <span class="dt-app-list__text">Gmail</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-drive.png" alt="Google Drive">
+                    <img src="/assets/images/icon/icon-drive.png" alt="Google Drive">
                     <span class="dt-app-list__text">Drive</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-calendar.png" alt="Calendar">
+                    <img src="/assets/images/icon/icon-calendar.png" alt="Calendar">
                     <span class="dt-app-list__text">Calendar</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-google-plus.png" alt="Google Plus">
+                    <img src="/assets/images/icon/icon-google-plus.png" alt="Google Plus">
                     <span class="dt-app-list__text">Google+</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-translate.png" alt="Translate">
+                    <img src="/assets/images/icon/icon-translate.png" alt="Translate">
                     <span class="dt-app-list__text">Translate</span> </a>
                 </li>
                 <li class="dt-app-list__item">
                   <a href="javascript:void(0)" class="dt-app-list__link">
-                    <img src="assets/images/icon/icon-photos.png" alt="Photos">
+                    <img src="/assets/images/icon/icon-photos.png" alt="Photos">
                     <span class="dt-app-list__text">Photos</span> </a>
                 </li>
               </ul>
@@ -193,7 +192,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/stella-johnson.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/stella-johnson.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -202,7 +201,7 @@
                       <span class="user-name">Stella Johnson</span> and <span class="user-name">Chris Harris</span>
                       have birthdays today. Help them celebrate!
                     </span>
-                    <span class="meta-date"><time>8 hours ago</time></span>
+                    <span class="meta-date">8 hours ago</span>
                   </span>
                     <!-- /media body -->
 
@@ -213,7 +212,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/jeson-born.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/jeson-born.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -221,7 +220,7 @@
                     <span class="message">
                       <span class="user-name">Jonathan Madano</span> commented on your post.
                     </span>
-                    <span class="meta-date"><time>9 hours ago</time></span>
+                    <span class="meta-date">9 hours ago</span>
                   </span>
                     <!-- /media body -->
 
@@ -232,7 +231,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/selena.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/selena.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -242,7 +241,7 @@
                     </span>
                     <span class="meta-date">
                       <i class="icon icon-play-circle text-primary icon-fw mr-1"></i>
-                      <time>13 hours ago</time>
+                      13 hours ago
                     </span>
                   </span>
                     <!-- /media body -->
@@ -254,7 +253,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/alex-dolgove.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/alex-dolgove.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -265,7 +264,7 @@
                     </span>
                     <span class="meta-date">
                       <i class="icon icon-like text-light-blue icon-fw mr-1"></i>
-                      <time>yesterday at 9:30</time>
+                      yesterday at 9:30
                     </span>
                   </span>
                     <!-- /media body -->
@@ -317,7 +316,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/mathew.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/mathew.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -328,25 +327,21 @@
                     <!-- /media body -->
 
                     <span class="action-area h-100 min-w-80 text-right">
-                    <span class="meta-date mb-1"><time>8 hours ago</time></span>
-                      <!-- Checkbox -->
-                    <span class="dt-checkbox dt-checkbox-icon dt-checkbox-only" data-toggle="tooltip"
-                          data-placement="left" title="Mark as unread">
-                      <input id="option-checkbox" type="checkbox" checked>
-                      <label class="font-weight-light dt-checkbox-content" for="option-checkbox">
-                        <span class="unchecked"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
-                        <span class="checked"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
-                      </label>
-                    </span>
-                      <!-- /checkbox -->
-                  </span> </a>
+                      <span class="meta-date mb-1">8 hours ago</span>
+                      <!-- Toggle Button -->
+                      <span class="toggle-button" data-toggle="tooltip" data-placement="left" title="Mark as read">
+                        <span class="show"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
+                        <span class="hide"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
+                      </span>
+                      <!-- /toggle button -->
+                    </span> </a>
                   <!-- /media -->
 
                   <!-- Media -->
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/stella-johnson.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/stella-johnson.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -359,17 +354,13 @@
                     <!-- /media body -->
 
                     <span class="action-area h-100 min-w-80 text-right">
-                    <span class="meta-date mb-1"><time>9 hours ago</time></span>
-                      <!-- Checkbox -->
-                    <span class="dt-checkbox dt-checkbox-icon dt-checkbox-only" data-toggle="tooltip"
-                          data-placement="left" title="Mark as read">
-                      <input id="option-checkbox" type="checkbox">
-                      <label class="font-weight-light dt-checkbox-content" for="option-checkbox">
-                        <span class="unchecked"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
-                        <span class="checked"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
-                      </label>
-                    </span>
-                      <!-- /checkbox -->
+                    <span class="meta-date mb-1">9 hours ago</span>
+                      <!-- Toggle Button -->
+                      <span class="toggle-button" data-toggle="tooltip" data-placement="left" title="Mark as read">
+                        <span class="show"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
+                        <span class="hide"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
+                      </span>
+                      <!-- /toggle button -->
                   </span> </a>
                   <!-- /media -->
 
@@ -377,7 +368,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/steve-smith.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/steve-smith.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -390,17 +381,13 @@
                     <!-- /media body -->
 
                     <span class="action-area h-100 min-w-80 text-right">
-                    <span class="meta-date mb-1"><time>12 hours ago</time></span>
-                      <!-- Checkbox -->
-                    <span class="dt-checkbox dt-checkbox-icon dt-checkbox-only" data-toggle="tooltip"
-                          data-placement="left" title="Mark as read">
-                      <input id="option-checkbox" type="checkbox">
-                      <label class="font-weight-light dt-checkbox-content" for="option-checkbox">
-                        <span class="unchecked"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
-                        <span class="checked"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
-                      </label>
-                    </span>
-                      <!-- /checkbox -->
+                    <span class="meta-date mb-1">12 hours ago</span>
+                      <!-- Toggle Button -->
+                      <span class="toggle-button" data-toggle="tooltip" data-placement="left" title="Mark as read">
+                        <span class="show"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
+                        <span class="hide"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
+                      </span>
+                      <!-- /toggle button -->
                   </span> </a>
                   <!-- /media -->
 
@@ -408,7 +395,7 @@
                   <a href="javascript:void(0)" class="media">
 
                     <!-- Avatar -->
-                    <img class="dt-avatar mr-3" src="assets/images/user-avatar/domnic-brown.jpg" alt="User">
+                    <img class="dt-avatar mr-3" src="/assets/images/user-avatar/domnic-brown.jpg" alt="User">
                     <!-- avatar -->
 
                     <!-- Media Body -->
@@ -419,17 +406,13 @@
                     <!-- /media body -->
 
                     <span class="action-area h-100 min-w-80 text-right">
-                    <span class="meta-date mb-1"><time>yesterday</time></span>
-                      <!-- Checkbox -->
-                    <span class="dt-checkbox dt-checkbox-icon dt-checkbox-only" data-toggle="tooltip"
-                          data-placement="left" title="Mark as unread">
-                      <input id="option-checkbox" type="checkbox" checked>
-                      <label class="font-weight-light dt-checkbox-content" for="option-checkbox">
-                        <span class="unchecked"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
-                        <span class="checked"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
-                      </label>
-                    </span>
-                      <!-- /checkbox -->
+                    <span class="meta-date mb-1">yesterday</span>
+                      <!-- Toggle Button -->
+                      <span class="toggle-button" data-toggle="tooltip" data-placement="left" title="Mark as read">
+                        <span class="show"><i class="icon icon-dot-o icon-fw f-10 text-light-gray"></i></span>
+                        <span class="hide"><i class="icon icon-dot icon-fw f-10 text-light-gray"></i></span>
+                      </span>
+                      <!-- /toggle button -->
                   </span> </a>
                   <!-- /media -->
 
@@ -484,7 +467,7 @@
             <!-- Dropdown Link -->
             <a href="javascript:void(0)" class="dt-nav__link dropdown-toggle no-arrow dt-avatar-wrapper"
                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <img class="dt-avatar size-30" src="assets/images/user-avatar/domnic-harris.jpg" alt="Domnic Harris">
+              <img class="dt-avatar size-30" src="/assets/images/user-avatar/domnic-harris.jpg" alt="Domnic Harris">
               <span class="dt-avatar-info d-none d-sm-block">
                 <span class="dt-avatar-name">Bob Hyden</span>
               </span> </a>
@@ -493,7 +476,7 @@
             <!-- Dropdown Option -->
             <div class="dropdown-menu dropdown-menu-right">
               <div class="dt-avatar-wrapper flex-nowrap p-6 mt--5 bg-gradient-purple text-white rounded-top">
-                <img class="dt-avatar" src="assets/images/user-avatar/domnic-harris.jpg" alt="Domnic Harris">
+                <img class="dt-avatar" src="/assets/images/user-avatar/domnic-harris.jpg" alt="Domnic Harris">
                 <span class="dt-avatar-info">
                   <span class="dt-avatar-name">Bob Hyden</span>
                   <span class="f-12">Administrator</span>
@@ -502,8 +485,7 @@
               <a class="dropdown-item" href="javascript:void(0)"> <i class="icon icon-user icon-fw mr-2 mr-sm-1"></i>Account
               </a> <a class="dropdown-item" href="javascript:void(0)">
                 <i class="icon icon-settings icon-fw mr-2 mr-sm-1"></i>Setting </a>
-              <a class="dropdown-item" href="page-login.php"> <i class="icon icon-editors icon-fw mr-2 mr-sm-1"></i>Logout
-              </a>
+                <%= link_to pages_login_path, class: "dropdown-item" do %> <i class="icon icon-editors icon-fw mr-2 mr-sm-1"></i>Logout <% end %>
             </div>
             <!-- /dropdown option -->
 

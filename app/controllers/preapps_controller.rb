@@ -1,10 +1,18 @@
 class PreappsController < ApplicationController
   def taskmanager
-    @title = 'taskmanager'
+    @title = 'Task Manager'
+  end
+
+  def taskmanager_inner
+    @title = 'Task Manager Inner'
   end
 
   def mail
     @title = 'Mails'
+  end
+
+  def mail_detail
+    @title = 'Mail Details'
   end
 
   def contactus
@@ -13,6 +21,10 @@ class PreappsController < ApplicationController
 
   def chat
     @title = 'Chat'
+  end
+
+  def chat_start
+    @title = 'Chat Start'
   end
 
 end

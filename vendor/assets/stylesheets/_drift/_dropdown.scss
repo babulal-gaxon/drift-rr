@@ -18,19 +18,19 @@
   }
 
   .dropleft &:before {
-    content: '\58';
+    content: '\31';
   }
 
   .dropright &:after {
-    content: '\59';
+    content: '\32';
   }
 
   .dropup &:after {
-    content: '\5a';
+    content: '\33';
   }
 
   &:after {
-    content: '\57';
+    content: '\30';
   }
 
   &.dropdown-toggle-split:after {

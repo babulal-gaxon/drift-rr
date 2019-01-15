@@ -3,4 +3,8 @@ class WidgetsController < ApplicationController
     @title = 'Widgets'
   end
 
+  def layouts
+    @title = 'Layouts'
+  end
+
 end

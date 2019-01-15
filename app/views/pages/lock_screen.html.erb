@@ -1,1 +1,44 @@
-lock screen page
+<div class="dt-root">
+  <!-- Login Container -->
+  <div class="dt-login--container dt-lock-screen">
+
+    <!-- Login Content -->
+    <div class="dt-login__content-wrapper">
+
+      <!-- Avatar -->
+      <img class="dt-avatar size-120" src="/assets/images/user-avatar/amay.jpg" alt="Zakie chain">
+      <!-- /avatar -->
+
+      <h2 class="text-white display-1 font-weight-light mb-6">Dinesh Suthar</h2>
+
+      <!-- Form -->
+      <form action="index.php">
+
+        <!-- Form Group -->
+        <div class="form-group mb-6">
+          <label class="sr-only" for="password">Email address</label>
+          <input type="password" class="form-control border-0 shadow-none" id="password"
+                 placeholder="Enter you password">
+        </div>
+        <!-- /form group -->
+
+        <div class="mb-5">
+          <%= link_to pages_forgot_password_path, class: "d-inline-block text-white f-16" do %> I forgot my PIN <% end %>
+        </div>
+
+        <div>
+          <%= link_to pages_login_path, class: "d-inline-block text-white f-16" do %> Sign-in options <% end %>
+        </div>
+
+      </form>
+      <!-- /form -->
+
+    </div>
+    <!-- /login content -->
+
+  </div>
+  <!-- /login container -->
+</div>
+<%= render 'layouts/partials/end', collection: @partials %>
+<!-- Dependencies -->
+<%= javascript_include_tag 'script.js' %>

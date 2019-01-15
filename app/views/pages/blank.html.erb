@@ -1,1 +1,34 @@
-blank page
+<div class="dt-root">
+  <%= render 'layouts/partials/header', collection: @partials %>     
+  <!-- Site Main -->
+  <main class="dt-main">
+    <%= render 'layouts/partials/sidebar', collection: @partials %>
+
+    <!-- Site Content Wrapper -->
+    <div class="dt-content-wrapper">
+
+      <!-- Site Content -->
+      <div class="dt-content">
+
+        <!-- Page Header -->
+        <div class="dt-page__header">
+          <h1 class="dt-page__title">Blank Page</h1>
+        </div>
+        <!-- /page header -->
+
+      </div>
+      <!-- /site content -->
+
+      <%= render 'layouts/partials/footer', collection: @partials %>
+
+    </div>
+    <!-- /site content wrapper -->
+
+    <%= render 'layouts/partials/customizer', collection: @partials %>
+
+  </main>
+</div>
+<%= render 'layouts/partials/end', collection: @partials %>
+
+<!-- Dependencies -->
+<%= javascript_include_tag 'script.js' %>
